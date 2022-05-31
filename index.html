@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="servic py-5">
+        <div class="container">
+            <h1 class="text-center">
+                Movies catolog
+            </h1>
+            <div class="row">
+                <div class="col-4 p-3">
+                    <form class="mb-3" action="https://echo.htmlacademy.ru/" method="POST">
+                        <input class="form-control mb-2" name="user_name" type="text" placeholder="ave"
+                            aria-label="text kiriting ">
+                        <input class="form-control mb-2" name="user__agg" type="text" placeholder="5"
+                            aria-label="text kiriting va raqam kiriting ">
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected disabled>All</option>
+                            <option value="with">Two</option>
+                            <option value="ol">ol</option>
+                        </select>
+                        <input class="form-control mb-4" name="user_tanlovi" aria-label="tenlang" list="datalistOptions"
+                            value="Rating (high to Low)">
+                        <datalist class="bd-light" id="datalistOptions">
+                            <option value="Rating (high to low)">Rating (high to low)</option>
+                            <option value="Rating (low to high)">Rating (low to high)</option>
+                        </datalist>
+                        <button class="btn btn-primary w-100" type="submit">Search</button>
+                    </form>
+                    <h2 class="width-100 text-start fs-1"> Bookmarked movies</h2>
+                    <ul class="list-group px-1">
+                        <li class="list-group-item mb-2">
+                            <h5 class="d-block  mb-2">
+                                Avengers :infinity War
+                            </h5>
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Remove</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 ">
+                            <h5 class="d-block mb-2">
+                                The Avengers
+                            </h5>
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Remove</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 ">
+                            <h5 class="d-block mb-2">
+                                12 years a Slave
+                            </h5>
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8 py-3 px-3">
+                    <strong class="mb-2 fs-5 fw-bolder">
+                        Search resuts: 39
+                    </strong>
+                    <div class="alert alert-primary mb-2" role="alert">
+                        Use the form on the left to search for a movie
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <div class="card  ">
+                                <img class="card-img-top" src="./imgs/infinity-war.jpg" height="190"
+                                    alt="ofical trealler">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder "> Avengers :infinity War</h5>
+
+                                    <ul class="list-group d-flex flex-row bd-highlight mb-3">
+                                        <li class="list-group-item  bd-highlight mb-0 p-0 me-2"
+                                            style="list-style-type: none;">
+                                            <img src="./imgs/calendar.jpg" width="30" height="30" alt="">
+                                        </li>
+                                        <li class="list-group-item  bd-highlight mb-0 p-0 py-1  "
+                                            style="list-style-type: none;">2018</li>
+                                    </ul>
+                                    <ul class="list-group d-flex  flex-row bd-highlight   mb-0 p-0">
+                                        <li class="list-group-item bd-highlight mb-0 p-0 me-2"
+                                            style="list-style-type: none;">
+                                            <img src="./imgs/star.jpg" width="30" height="30" alt="star">
+                                        </li>
+                                        <li class="list-group-item  bd-highlight mb-0 p-0 py-1"
+                                            style="list-style-type: none;">8.7</li>
+                                    </ul>
+                                    <div class="my-3">
+                                        <button type="button" class="btn btn-outline-primary">Watch trailler</button>
+                                        <button type="button" class="btn btn-outline-secondary mx-2">More info</button>
+                                        <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card ">
+                                <img class="card-img-top" src="./imgs/avengers.jpg" height="190" alt="ofical trealler">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder "> The Avengers</h5>
+
+                                    <ul class="list-group d-flex flex-row bd-highlight mb-3">
+                                        <li class="list-group-item  bd-highlight mb-0 p-0 me-2"
+                                            style="list-style-type: none;">
+                                            <img src="./imgs/calendar.jpg" width="30" height="30" alt="calendar">
+                                        </li>
+                                        <li class="list-group-item  bd-highlight mb-0 p-0 py-1  "
+                                            style="list-style-type: none;">2012</li>
+                                    </ul>
+                                    <ul class="list-group d-flex  flex-row bd-highlight   mb-0 p-0">
+                                        <li class="list-group-item bd-highlight mb-0 p-0 me-2"
+                                            style="list-style-type: none;">
+                                            <img src="./imgs/star.jpg" width="30" height="30" alt="star">
+                                        </li>
+                                        <li class="list-group-item  bd-highlight mb-0 p-0 py-1"
+                                            style="list-style-type: none;">8.1</li>
+                                    </ul>
+                                    <div class="my-3">
+                                        <button type="button" class="btn btn-outline-primary">Watch trailler</button>
+                                        <button type="button" class="btn btn-outline-secondary mx-2">More info</button>
+                                        <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <nav aria-label="pagelar  ">
+                        <ul class="pagination pagination justify-content-center">
+                            <li class="page-item active tenlang " aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
